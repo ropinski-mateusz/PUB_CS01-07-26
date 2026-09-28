@@ -8,6 +8,7 @@ Poniższa tabela przedstawia hasła zdobyte na poszczególnych poziomach, służ
 
 | Poziom źródłowy | Zdobyte hasło dla użytkownika | Hasło |
 | :--- | :--- | :--- |
+| **-------** | **bandit0** | `bandit0` |
 | **bandit0** | **bandit1** | `6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR` |
 | **bandit1** | **bandit2** | `PK8fYLZg2hnHSz83plBL1iEPKdD3QToB` |
 | **bandit2** | **bandit3** | `7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME` |
