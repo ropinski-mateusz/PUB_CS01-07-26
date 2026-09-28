@@ -30,3 +30,16 @@ Poniższa tabela przedstawia hasła zdobyte na poszczególnych poziomach, służ
 | **bandit18** | **bandit19** | `KpsOfPkcP7i1FlIExk2QEjyt6dw8dxZI` |
 | **bandit19** | **bandit20** | `4pIjcunZ0fK2vmp3IwfG8Vf7VhxD6pOA` |
 | **bandit20** | **bandit21** | `bW9kBv5WC3P4yoDyf12LSdGuNz5ka6hY` |
+| **bandit21** | **bandit22** | `` |
+| **bandit22** | **bandit23** | `` |
+| **bandit23** | **bandit24** | `` |
+| **bandit24** | **bandit25** | `` |
+| **bandit25** | **bandit26** | `` |
+| **bandit26** | **bandit27** | `` |
+| **bandit27** | **bandit28** | `` |
+| **bandit28** | **bandit29** | `` |
+| **bandit29** | **bandit30** | `` |
+| **bandit30** | **bandit31** | `` |
+| **bandit31** | **bandit32** | `` |
+| **bandit32** | **bandit33** | `` |
+| **bandit33** | **bandit34** | `At this moment, level 34 does not exist yet.` |
