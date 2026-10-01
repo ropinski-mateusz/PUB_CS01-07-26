@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Strona-1" id="P2m9Q2ox-uUrSVs7IneW">
+    <mxGraphModel dx="1364" dy="1928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-4" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="180" />
+            </Array>
+            <mxPoint x="160" y="180" as="sourcePoint" />
+            <mxPoint x="640" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-5" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="410" />
+            </Array>
+            <mxPoint x="160" y="410" as="sourcePoint" />
+            <mxPoint x="640" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Granica Zaufania: Sieć publiczna" vertex="1">
+          <mxGeometry height="30" width="190" x="90" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Granica Zaufania: Sieć wewnętrzna" vertex="1">
+          <mxGeometry height="30" width="210" x="80" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 0, 0));&quot;&gt;Strefa Niezaufana&lt;/span&gt; Użytkownik/ Klient" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 128, 0));&quot;&gt;Strefa Pośrednia&lt;/span&gt;&lt;br&gt;Serwer Aplikacji" vertex="1">
+          <mxGeometry height="60" width="120" x="310" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="DB&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 102, 0));&quot;&gt;Strefa Najwyższego Zaufania&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="175" x="282.5" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-20" edge="1" parent="1" source="BxQJDsHb-09vbqhSUwbU-15" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="BxQJDsHb-09vbqhSUwbU-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="380" />
+            </Array>
+            <mxPoint x="390" y="320" as="sourcePoint" />
+            <mxPoint x="440" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-21" edge="1" parent="1" source="BxQJDsHb-09vbqhSUwbU-14" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="BxQJDsHb-09vbqhSUwbU-13" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="320" y="170" as="sourcePoint" />
+            <mxPoint x="370" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Żądanie przelewu&lt;br&gt;&lt;br&gt;(Kwota, Odbiorca, Nr konta, Token MFA)" vertex="1">
+          <mxGeometry height="90" width="180" x="410" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Potwierdzenie" vertex="1">
+          <mxGeometry height="30" width="70" x="250" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Zapytanie transakcyjne&lt;br&gt;&lt;br&gt;Blokada środków, aktulizacja sald" vertex="1">
+          <mxGeometry height="30" width="220" x="390" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;h1&gt;&lt;span style=&quot;font-weight: normal; color: light-dark(rgb(0, 0, 0), rgb(255, 0, 0));&quot;&gt;Aplikacja bankowa do przelewów&lt;/span&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="20" width="230" x="10" y="-60" as="geometry" />
+        </mxCell>
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-36" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="150" as="sourcePoint" />
+            <mxPoint x="340" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BxQJDsHb-09vbqhSUwbU-37" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="100" as="sourcePoint" />
+            <mxPoint x="390" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
