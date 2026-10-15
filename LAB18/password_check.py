@@ -1,4 +1,4 @@
-def validate_password(password, minLength=12):
+def validate_password(password, minLength):
 
     #Inicjacja pustej listy
     problems = []
@@ -7,9 +7,9 @@ def validate_password(password, minLength=12):
     if not password:
         problems.append("Haslo nie moze byc puste.")
 
-    #Sprawdzenie czy haslo ma 12 znakow
-    if len(password) < 12:
-        problems.append("Haslo ma mniej niz 12 znakow.")
+    #Sprawdzenie czy haslo ma mniej znakow niz minLength
+    if len(password) < minLength:
+        problems.append(f"Haslo ma mniej niz {minLength} znakow.")
 
     # Sprawdzenie spacji na brzegach
     if password.startswith(" ") or password.endswith(" "):
@@ -27,11 +27,11 @@ def validate_password(password, minLength=12):
     #Sprawdzenie znakow w hasle
     for char in password:
         if char.islower():
-            isDigit = True
-        elif char.isupper():
             isLowerCase = True
+        elif char.isupper():
+            isUpperCase  = True
         elif char.isdigit():
-            isUpperCase = True
+            isDigit = True
         elif char in specialCharacters:
             isSpecialCharacter = True
 
@@ -45,21 +45,41 @@ def validate_password(password, minLength=12):
     if not isSpecialCharacter:
         problems.append("Brak znaku specjalnego `!@#$%^&*`")
 
+    print(problems)
+
+def test():
     testScenarios = {
     "Puste haslo": "",
     "Za krotkie haslo": "admin",
     "Brak wielkiej litery": "password123!",
-    "Brak cyfry": "PasswordTest!",
+    "Brak cyfry": "Passwordtest!",
     "Brak znaku specjalnego": "Password1234",
-    "Spacje na brzegach": " Password123! ",
+    "Spacje na koncach": " Password123! ",
     "Poprawne haslo": "VeryLongPassword123!"
     }
+    for nazwaTestu, haslo in testScenarios.items():
+        validate_password(haslo, 12)
+        print("Wynik dla: ", nazwaTestu)
 
+    
 
-    print(problems)
+def main():
+    #test()
 
+    minLengthInput = input("Podaj minimalna dlugosc hasla: (domyslnie 12 znakow): ")
+    if minLengthInput.strip() == "":
+        minLength = 12
+    else:
+        try:
+            minLength = int(minLengthInput)
+        except ValueError:
+            print("Niepoprawna wartosc, podaj liczbe calkowita nastepnym razem: ")
+            return
+        
 
-#Zaczytanie hasla z klawiatury
-password = input("Podaj haslo do sprawdzenia: ")
+    #Zaczytanie hasla z klawiatury
+    password = input("Podaj haslo do sprawdzenia: ")
+    validate_password(password, minLength)
 
-validate_password(password, 12)
+if __name__ == "__main__":
+    main()
