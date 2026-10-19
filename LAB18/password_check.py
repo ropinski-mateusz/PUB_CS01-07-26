@@ -1,4 +1,4 @@
-def validate_password(password, minLength):
+def validate_password(password, minLength=12):
 
     #Inicjacja pustej listy
     problems = []
@@ -6,6 +6,7 @@ def validate_password(password, minLength):
     #Sprawdzenie czy haslo nie puste
     if not password:
         problems.append("Haslo nie moze byc puste.")
+        return False, problems
 
     #Sprawdzenie czy haslo ma mniej znakow niz minLength
     if len(password) < minLength:
@@ -45,7 +46,8 @@ def validate_password(password, minLength):
     if not isSpecialCharacter:
         problems.append("Brak znaku specjalnego `!@#$%^&*`")
 
-    print(problems)
+    isValid = len(problems) == 0
+    return isValid, problems
 
 def test():
     testScenarios = {
@@ -58,13 +60,20 @@ def test():
     "Poprawne haslo": "VeryLongPassword123!"
     }
     for nazwaTestu, haslo in testScenarios.items():
-        validate_password(haslo, 12)
-        print("Wynik dla: ", nazwaTestu)
+        isValid, problems = validate_password(haslo)
+        printResult(isValid, problems)
 
-    
+def printResult(isValid, problems):
+    if isValid:
+        print("Haslo spelnia dana polityke bezpieczenstwa")
+    else:
+        print("Haslo nie spenia polityki bezpieczenstwa")
+        for problem in problems:
+            print(f" - {problem}")
+
 
 def main():
-    #test()
+    test()
 
     minLengthInput = input("Podaj minimalna dlugosc hasla: (domyslnie 12 znakow): ")
     if minLengthInput.strip() == "":
@@ -79,7 +88,8 @@ def main():
 
     #Zaczytanie hasla z klawiatury
     password = input("Podaj haslo do sprawdzenia: ")
-    validate_password(password, minLength)
+    isValid, problems = validate_password(password, minLength)
+    printResult(isValid, problems) 
 
-if __name__ == "__main__":
-    main()
+
+main()
