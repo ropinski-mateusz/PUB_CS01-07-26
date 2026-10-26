@@ -2,7 +2,7 @@
 
 ## Opis
 
-`password-tool` to edukacyjne narzędzie CLI do walidacji haseł testowych zgodnie z prostą polityką bezpieczeństwa.
+`password-tool` to narzędzie CLI do walidacji haseł testowych zgodnie z prostą polityką bezpieczeństwa.
 
 Narzędzie służy do nauki klas, modułów, środowisk wirtualnych i `argparse`. Nie jest produkcyjnym systemem oceny haseł.
 
